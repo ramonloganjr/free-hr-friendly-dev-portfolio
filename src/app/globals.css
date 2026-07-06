@@ -422,6 +422,37 @@
   }
 }
 
+/* --------------------------- Theme transition --------------------------- */
+
+/*
+ * Circular reveal for the light/dark toggle (View Transitions API). The new
+ * theme sits above the old as a static full-page snapshot; JS animates its
+ * clip-path from a 0-radius circle at the click point out past the farthest
+ * corner. Browsers without support just get the instant class swap plus the
+ * existing color/background transitions above — no broken states either way.
+ */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(root),
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}
+
 /* ----------------------------- Typography ------------------------------ */
 
 .text-display {
