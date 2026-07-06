@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/ui/Reveal";
@@ -9,6 +10,18 @@ export function Hero() {
         aria-hidden="true"
         className="dot-grid pointer-events-none absolute inset-0 -z-10"
       />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute right-6 top-1/2 hidden w-56 -translate-y-1/2 rotate-6 md:block lg:w-72"
+      >
+        <Image
+          src="/logo.png"
+          alt=""
+          width={320}
+          height={320}
+          className="h-auto w-full object-contain"
+        />
+      </div>
       <div className="flex flex-col items-start gap-6 max-w-3xl">
         <Reveal delay={80}>
           <h1 className="text-display text-balance">

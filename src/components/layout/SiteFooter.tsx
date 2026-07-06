@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { civicLinks, navLinks, profile } from "@/lib/data/profile";
 import { Icon } from "@/components/ui/Icon";
-import { BrandMark } from "./BrandMark";
 
 const elsewhere = [
   { label: "LinkedIn", href: profile.social.linkedin },
@@ -16,12 +15,9 @@ export function SiteFooter() {
       <div className="glass rounded-[2rem] px-6 py-10 sm:px-10 sm:py-12">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3">
-              <BrandMark size={30} />
-              <div>
-                <p className="font-semibold tracking-[-0.01em]">{profile.name}</p>
-                <p className="text-sm text-secondary">{profile.title}</p>
-              </div>
+            <div>
+              <p className="font-semibold tracking-[-0.01em]">{profile.name}</p>
+              <p className="text-sm text-secondary">{profile.title}</p>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-secondary">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit — sed do
