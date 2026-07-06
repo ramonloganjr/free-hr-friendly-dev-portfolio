@@ -26,7 +26,7 @@ const googleSansFlex = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://free-hr-friendly-dev-portfolio.vercel.app"),
   title: {
     default: "Lorem Ipsum — Full-Stack Engineer & Product Designer",
     template: "%s — Lorem Ipsum",
