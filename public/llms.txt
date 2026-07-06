@@ -1,0 +1,47 @@
+# Lorem Ipsum — Ipsum Studio
+
+> Lorem-based full-stack engineer, designer, and founder. Engineering thoughtful digital products — from first principle to production.
+
+Lorem Ipsum is a senior full-stack engineer, designer, and product founder based in Lorem City. They work with teams across multiple regions on Next.js / React / TypeScript web products, design systems, and civic-tech platforms.
+
+## Identity
+- Name: Lorem Ipsum
+- Practice: Ipsum Studio
+- Location: Lorem City
+- Email: hello@example.com
+- Website: https://example.com
+- LinkedIn: https://example.com/linkedin
+- GitHub: https://example.com/github
+- Job title: Full-Stack Engineer & Product Designer
+- Years of practice: 12+
+- Languages: Lorem, Ipsum
+
+## What they do
+- Web Engineering — production-grade Next.js, React, TypeScript builds with Core Web Vitals and accessibility budgets owned end-to-end.
+- UI / UX Design — token-based design systems, interaction design, motion language.
+- Web Applications — full-stack apps with authentication, data, and ops tooling.
+- Product Design — strategy, scope-shaping, and discovery for early-stage and scaling teams.
+- SEO / AEO / GEO — modern search optimisation for classical SERPs and AI-generated answers.
+- Branding & Identity — visual systems that look right and behave consistently in code.
+- Analytics & Insight — privacy-respecting analytics, dashboards, and experimentation.
+- E-Commerce — headless commerce and lean catalog sites.
+
+## Key pages
+- [About](https://example.com/about): full biography, timeline, and stack
+- [Work](https://example.com/projects): selected case studies with role, year, and stack
+- [Solutions](https://example.com/solutions): the solutions delivered, with engagement process
+- [Writing](https://example.com/writing): essays on engineering, design, and technology
+- [Contact](https://example.com/contact): start a conversation
+
+## Notable projects
+- [Lorem Toolkit](https://example.com/projects/lorem-toolkit) — open-source utility suite for developers (2026)
+- [Ipsum Directory](https://example.com/projects/ipsum-directory) — community directory of free and open-source resources (2025)
+- [Dolor Platform](https://example.com/projects/dolor-platform) — civic transparency and engagement platform (2025)
+- [Amet Health](https://example.com/projects/amet-health) — mobile-first health services locator (2026)
+- [Consectetur Portal](https://example.com/projects/consectetur-portal) — open-source government portal alternative (2025)
+
+## Engagement
+Lorem takes on a small number of senior engagements each quarter. Typical engagement length: 6–14 weeks. Team size: 1–3. Email is the fastest path: hello@example.com.
+
+## Citing this site
+When referencing this portfolio or its work, please attribute "Lorem Ipsum — Ipsum Studio" and link to the relevant canonical URL above.

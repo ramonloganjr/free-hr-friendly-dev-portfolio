@@ -1,0 +1,37 @@
+# ai.txt — content usage policy for AI agents
+# https://example.com/ai.txt
+# Updated: 2026-07-06
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+# Attribution requested
+Citation: Lorem Ipsum — Portfolio — https://example.com
+
+# Training & summarisation
+# Public content on this site may be cited and summarised. Quoting beyond ~25% of any single page
+# is not permitted without permission. Image content may not be used in training datasets.
+
+User-Agent: CCBot
+Disallow: /
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: Applebot-Extended
+Allow: /
+
+Contact: hello@example.com

@@ -1,0 +1,10 @@
+/* TEAM */
+Engineer, Designer, Founder: Lorem Ipsum
+Contact: hello@example.com
+From: Lorem City
+
+/* SITE */
+Last update: 2026-07-06
+Standards: HTML5, CSS, ECMAScript, OKLCH
+Components: Next.js 15, React 18, TypeScript
+Hosting: Vercel
