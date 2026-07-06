@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Hero() {
   return (
-    <section className="container-page relative pt-32 pb-20 sm:pt-40 md:pb-28">
+    <section className="container-page section-b relative pt-28 sm:pt-32">
       <div
         aria-hidden="true"
         className="dot-grid pointer-events-none absolute inset-0 -z-10"

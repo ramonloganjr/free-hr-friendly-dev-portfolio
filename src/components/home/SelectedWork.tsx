@@ -11,7 +11,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function SelectedWork() {
   return (
-    <section className="container-page py-20 md:py-28" aria-labelledby="work-heading">
+    <section className="container-page section-b" aria-labelledby="work-heading">
       <SectionHeading
         id="work-heading"
         eyebrow="Selected work"
@@ -19,7 +19,7 @@ export function SelectedWork() {
         lede="Adipiscing elit sed do eiusmod tempor incididunt — ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud."
       />
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {featuredProjects.map((project, i) => (
           <Reveal
             key={project.slug}
@@ -31,7 +31,7 @@ export function SelectedWork() {
         ))}
       </div>
 
-      <Reveal className="mt-10">
+      <Reveal className="mt-8">
         <ul className="glass overflow-hidden rounded-[1.75rem]">
           {moreFeaturedProjects.map((project, i) => {
             const row = (
@@ -83,7 +83,7 @@ export function SelectedWork() {
         </ul>
       </Reveal>
 
-      <Reveal className="mt-10 flex justify-center">
+      <Reveal className="mt-8 flex justify-center">
         <Link href="/projects" className="btn btn-glass">
           View all {projects.length} projects
           <Icon name="arrowRight" size={17} />

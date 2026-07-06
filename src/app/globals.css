@@ -462,6 +462,21 @@
   }
 }
 
+/*
+ * Canonical inter-section rhythm. Sections stack with bottom padding only
+ * (no top padding) so gaps don't double up between adjacent sections —
+ * every page, home or otherwise, ends up on the same vertical scale.
+ */
+.section-b {
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-b {
+    padding-bottom: 6rem;
+  }
+}
+
 .hairline-t {
   border-top: 1px solid var(--separator);
 }

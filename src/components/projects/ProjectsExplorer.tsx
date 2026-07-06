@@ -28,7 +28,7 @@ export function ProjectsExplorer() {
   const options: Filter[] = ["All", ...projectCategories];
 
   return (
-    <div className="container-page pt-8 pb-20 md:pb-28">
+    <div className="container-page section-b pt-6">
       <div
         role="tablist"
         aria-label="Filter projects by sector"

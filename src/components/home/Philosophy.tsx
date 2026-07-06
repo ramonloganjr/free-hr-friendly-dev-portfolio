@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export function Philosophy() {
   return (
     <section
-      className="container-page py-20 md:py-28"
+      className="container-page section-b"
       aria-labelledby="philosophy-heading"
     >
       <SectionHeading
@@ -13,7 +13,7 @@ export function Philosophy() {
         eyebrow="Approach"
         title="Lorem ipsum, deliberately dolor."
       />
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {workPhilosophy.map((principle, i) => (
           <Reveal key={principle.title} delay={i * 90}>
             <article className="glass glass-interactive flex h-full flex-col gap-4 rounded-[1.75rem] p-6">

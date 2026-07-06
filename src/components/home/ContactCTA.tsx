@@ -5,9 +5,9 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function ContactCTA() {
   return (
-    <section className="container-page py-20 md:py-28" aria-labelledby="cta-heading">
+    <section className="container-page section-b" aria-labelledby="cta-heading">
       <Reveal>
-        <div className="glass-strong relative overflow-hidden rounded-[2rem] px-6 py-16 text-center sm:px-12 md:py-20">
+        <div className="glass-strong relative overflow-hidden rounded-[2rem] px-6 py-12 text-center sm:px-12 md:py-16">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -top-32 left-1/2 h-72 w-[36rem] -translate-x-1/2 rounded-full opacity-20 blur-3xl dark:opacity-30"

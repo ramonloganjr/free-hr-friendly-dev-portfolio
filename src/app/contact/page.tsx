@@ -94,7 +94,7 @@ export default function ContactPage() {
         lede="I read every message and reply personally, usually within one working day."
       />
 
-      <section className="container-page pt-12 pb-20" aria-label="Contact">
+      <section className="container-page section-b pt-8" aria-label="Contact">
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="flex flex-col gap-5">
             <Reveal>
@@ -154,7 +154,7 @@ export default function ContactPage() {
       </section>
 
       <section
-        className="container-page pb-20 md:pb-28"
+        className="container-page section-b"
         aria-labelledby="faq-heading"
       >
         <Reveal>

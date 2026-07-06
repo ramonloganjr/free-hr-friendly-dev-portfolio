@@ -24,7 +24,7 @@ export default function WritingPage() {
         lede="Essays on lorem, ipsum, dolor, and sit amet. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
       />
 
-      <section className="container-page pt-12 pb-20 md:pb-28" aria-label="All posts">
+      <section className="container-page section-b pt-8" aria-label="All posts">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post, i) => (
             <Reveal key={post.title} delay={(i % 3) * 80}>

@@ -3,7 +3,7 @@ import { Icon } from "@/components/ui/Icon";
 
 export default function NotFound() {
   return (
-    <section className="container-page flex min-h-[70svh] flex-col items-center justify-center pt-32 pb-20 text-center">
+    <section className="container-page flex min-h-[70svh] flex-col items-center justify-center pt-28 pb-16 text-center">
       <p className="text-gradient font-mono text-sm font-semibold">404</p>
       <h1 className="text-display mt-4 text-balance">
         This page drifted off the glass.

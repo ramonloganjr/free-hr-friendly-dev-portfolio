@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function Press() {
   return (
-    <section className="container-page py-20 md:py-28" aria-labelledby="press-heading">
+    <section className="container-page section-b" aria-labelledby="press-heading">
       <SectionHeading
         id="press-heading"
         eyebrow="Featured in"
@@ -13,7 +13,7 @@ export function Press() {
         lede="Dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore."
       />
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {pressFeatures.map((feature, i) => (
           <Reveal key={feature.outlet} delay={(i % 3) * 90}>
             <article className="glass glass-interactive flex h-full flex-col overflow-hidden rounded-[1.75rem]">

@@ -26,7 +26,7 @@ function LogoRow({ prefix, hidden }: { prefix: string; hidden?: boolean }) {
 
 export function Clients() {
   return (
-    <section className="py-20 md:py-28" aria-labelledby="clients-heading">
+    <section className="section-b" aria-labelledby="clients-heading">
       <div className="container-page">
         <Reveal className="text-center">
           <p className="text-[0.9375rem] font-semibold text-accent-elevated">
@@ -42,7 +42,7 @@ export function Clients() {
         </Reveal>
       </div>
 
-      <Reveal className="marquee group relative mt-10 overflow-hidden" delay={120}>
+      <Reveal className="marquee group relative mt-8 overflow-hidden" delay={120}>
         <div
           className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-page to-transparent"
           aria-hidden="true"

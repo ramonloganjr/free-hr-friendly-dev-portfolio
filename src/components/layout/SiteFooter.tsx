@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { civicLinks, navLinks, profile } from "@/lib/data/profile";
 import { Icon } from "@/components/ui/Icon";
+import packageJson from "../../../package.json";
 
 const elsewhere = [
   { label: "LinkedIn", href: profile.social.linkedin },
@@ -12,7 +13,7 @@ const elsewhere = [
 export function SiteFooter() {
   return (
     <footer className="container-page pb-8">
-      <div className="glass rounded-[2rem] px-6 py-10 sm:px-10 sm:py-12">
+      <div className="glass rounded-[2rem] px-6 py-8 sm:px-10 sm:py-10">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div className="flex flex-col gap-4">
             <div>
@@ -88,7 +89,7 @@ export function SiteFooter() {
           </nav>
         </div>
 
-        <div className="hairline-t mt-10 flex flex-wrap items-center gap-3 pt-6">
+        <div className="hairline-t mt-8 flex flex-wrap items-center gap-3 pt-5">
           <a
             href="https://github.com/ramonloganjr/free-hr-friendly-dev-portfolio"
             target="_blank"
@@ -102,9 +103,15 @@ export function SiteFooter() {
             <Icon name="download" size={17} />
             Download Static Files
           </a>
+          <span
+            className="rounded-full bg-[var(--fill-quaternary)] px-2.5 py-1 font-mono text-xs text-tertiary"
+            title="Current build version"
+          >
+            v{packageJson.version}
+          </span>
         </div>
 
-        <div className="mt-6 flex flex-col gap-2 pt-2 text-sm text-tertiary sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-5 flex flex-col gap-2 pt-2 text-sm text-tertiary sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 {profile.name}. All rights reserved.</p>
           <p>
             {profile.name} · {profile.title}

@@ -35,7 +35,7 @@ function TestimonialCard({ t }: { t: (typeof testimonials)[number] }) {
 
 export function Testimonials() {
   return (
-    <section className="py-20 md:py-28" aria-labelledby="testimonials-heading">
+    <section className="section-b" aria-labelledby="testimonials-heading">
       <div className="container-page">
         <SectionHeading
           id="testimonials-heading"
@@ -55,7 +55,7 @@ export function Testimonials() {
         ))}
       </ul>
 
-      <Reveal className="marquee group relative mt-12 overflow-hidden" delay={120}>
+      <Reveal className="marquee group relative mt-8 overflow-hidden" delay={120}>
         <div
           className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-page to-transparent"
           aria-hidden="true"

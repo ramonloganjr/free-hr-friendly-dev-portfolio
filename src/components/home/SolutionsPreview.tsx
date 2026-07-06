@@ -7,7 +7,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export function SolutionsPreview() {
   return (
     <section
-      className="container-page py-20 md:py-28"
+      className="container-page section-b"
       aria-labelledby="services-heading"
     >
       <div className="flex flex-wrap items-end justify-between gap-6">
@@ -24,7 +24,7 @@ export function SolutionsPreview() {
         </Reveal>
       </div>
 
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {solutions.map((solution, i) => (
           <Reveal key={solution.slug} delay={(i % 4) * 80}>
             <Link

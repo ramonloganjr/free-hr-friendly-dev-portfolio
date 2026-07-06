@@ -34,7 +34,7 @@ export default function AboutPage() {
       />
 
       {/* Portrait + bio */}
-      <section className="container-page pt-12 pb-20" aria-label="Biography">
+      <section className="container-page section-b pt-8" aria-label="Biography">
         <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
           <Reveal>
             <figure className="glass h-full overflow-hidden rounded-[2rem]">
@@ -81,7 +81,7 @@ export default function AboutPage() {
 
       {/* Career timeline */}
       <section
-        className="container-page pb-20 md:pb-28"
+        className="container-page section-b"
         aria-labelledby="timeline-heading"
       >
         <SectionHeading
@@ -89,7 +89,7 @@ export default function AboutPage() {
           eyebrow="Timeline"
           title="Lorem ipsum years, three dolores."
         />
-        <ol className="mt-12 flex flex-col gap-4">
+        <ol className="mt-8 flex flex-col gap-4">
           {careerTimeline.map((entry, i) => (
             <Reveal key={entry.period} delay={Math.min(i * 60, 180)} as="li">
               <article className="glass glass-interactive grid gap-3 rounded-[1.75rem] p-6 sm:grid-cols-[10rem_1fr] sm:gap-8 sm:p-7">
@@ -115,7 +115,7 @@ export default function AboutPage() {
       {/* Stack */}
       <section
         id="stack"
-        className="container-page scroll-mt-24 pb-20 md:pb-28"
+        className="container-page section-b scroll-mt-24"
         aria-labelledby="stack-heading"
       >
         <SectionHeading
@@ -124,7 +124,7 @@ export default function AboutPage() {
           title="Lorem chosen for ipsum."
           lede="Dolor sit amet toolkit, consectetur adipiscing elit sed do eiusmod tempor."
         />
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
           {skillGroups.map((group, gi) => (
             <Reveal key={group.group} delay={(gi % 2) * 90}>
               <div className="glass h-full rounded-[1.75rem] p-6 sm:p-7">
@@ -159,7 +159,7 @@ export default function AboutPage() {
       </section>
 
       {/* Education + civic work */}
-      <section className="container-page pb-20 md:pb-28" aria-labelledby="education-heading">
+      <section className="container-page section-b" aria-labelledby="education-heading">
         <div className="grid gap-5 lg:grid-cols-2">
           <Reveal>
             <div className="glass h-full rounded-[1.75rem] p-7">
@@ -219,7 +219,7 @@ export default function AboutPage() {
           </Reveal>
         </div>
 
-        <Reveal className="mt-12 flex justify-center">
+        <Reveal className="mt-8 flex justify-center">
           <Link href="/contact" className="btn btn-primary">
             Work with me
             <Icon name="arrowRight" size={17} />

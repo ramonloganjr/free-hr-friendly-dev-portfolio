@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 export function Ventures() {
   return (
     <section
-      className="container-page py-20 md:py-28"
+      className="container-page section-b"
       aria-labelledby="ventures-heading"
     >
       <SectionHeading
@@ -16,7 +16,7 @@ export function Ventures() {
         lede="Consectetur adipiscing elit platforms — sed do eiusmod tempor incididunt ut labore et dolore."
       />
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2">
+      <div className="mt-8 grid gap-5 sm:grid-cols-2">
         {ventures.map((venture, i) => (
           <Reveal key={venture.name} delay={(i % 2) * 90}>
             <a

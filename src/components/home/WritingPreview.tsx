@@ -10,7 +10,7 @@ export function WritingPreview() {
 
   return (
     <section
-      className="container-page py-20 md:py-28"
+      className="container-page section-b"
       aria-labelledby="writing-heading"
     >
       <div className="flex flex-wrap items-end justify-between gap-6">
@@ -27,7 +27,7 @@ export function WritingPreview() {
         </Reveal>
       </div>
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {latest.map((post, i) => (
           <Reveal key={post.title} delay={(i % 4) * 80}>
             <a
