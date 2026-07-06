@@ -55,13 +55,16 @@ export function Testimonials() {
         ))}
       </ul>
 
-      <Reveal className="marquee group relative mt-8 overflow-hidden" delay={120}>
+      <Reveal
+        className="marquee container-page relative mt-8 overflow-hidden"
+        delay={120}
+      >
         <div
-          className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-page to-transparent"
+          className="marquee-fade pointer-events-none absolute inset-y-0 left-0 z-10 bg-linear-to-r from-page to-transparent"
           aria-hidden="true"
         />
         <div
-          className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-page to-transparent"
+          className="marquee-fade pointer-events-none absolute inset-y-0 right-0 z-10 bg-linear-to-l from-page to-transparent"
           aria-hidden="true"
         />
         <ul

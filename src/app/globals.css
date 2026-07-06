@@ -314,15 +314,35 @@
 
 .marquee-track {
   animation: marquee 48s linear infinite;
+  will-change: transform;
 }
 
 .marquee-track-reverse {
   animation: marquee-reverse 48s linear infinite;
+  will-change: transform;
 }
 
 .marquee:hover .marquee-track,
 .marquee:hover .marquee-track-reverse {
   animation-play-state: paused;
+}
+
+/* Edge fade for marquees — width scales with the same breakpoints as
+   container-page so the mask reads consistently at every viewport. */
+.marquee-fade {
+  width: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .marquee-fade {
+    width: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .marquee-fade {
+    width: 6rem;
+  }
 }
 
 @keyframes float-slow {
@@ -376,6 +396,10 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none;
   }
 }
 
