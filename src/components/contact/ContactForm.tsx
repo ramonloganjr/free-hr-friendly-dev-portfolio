@@ -4,21 +4,7 @@ import { useState, type FormEvent } from "react";
 import { profile } from "@/lib/data/profile";
 import { Icon } from "@/components/ui/Icon";
 
-const scopes = [
-  "Web engineering",
-  "UI/UX Design",
-  "Web App",
-  "Product Design",
-  "SEO/AEO/GEO",
-  "Branding",
-  "Analytics",
-  "E-commerce",
-  "Partnership",
-  "Collaborations",
-  "Co-founding",
-  "Career Opportunities",
-  "Venture Opportunities",
-];
+const scopes = ["Collaboration", "Hire Me"];
 
 const fieldClass =
   "w-full rounded-2xl border border-separator bg-elevated/60 px-4 py-3 text-[0.9375rem] text-primary placeholder:text-quaternary transition-shadow duration-300 focus:border-transparent focus:shadow-[0_0_0_2px_var(--accent)] focus:outline-none";

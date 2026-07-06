@@ -64,28 +64,6 @@ export const skillGroups: SkillGroup[] = [
       { name: "Skill", icon: "/skills/skills.svg" },
     ],
   },
-  {
-    group: "Backend & Data",
-    skills: [
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-    ],
-  },
-  {
-    group: "Platform & Tooling",
-    skills: [
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-      { name: "Skill", icon: "/skills/skills.svg" },
-    ],
-  },
 ];
 
 export interface Venture {

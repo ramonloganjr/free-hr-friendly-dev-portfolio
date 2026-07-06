@@ -4,7 +4,11 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Hero() {
   return (
-    <section className="container-page pt-32 pb-20 sm:pt-40 md:pb-28">
+    <section className="container-page relative pt-32 pb-20 sm:pt-40 md:pb-28">
+      <div
+        aria-hidden="true"
+        className="dot-grid pointer-events-none absolute inset-0 -z-10"
+      />
       <div className="flex flex-col items-start gap-6 max-w-3xl">
         <Reveal delay={80}>
           <h1 className="text-display text-balance">

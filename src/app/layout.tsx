@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -9,6 +10,18 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const googleSansFlex = localFont({
+  src: [
+    {
+      path: "../fonts/GoogleSansFlex-latin.woff2",
+      weight: "400 700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-google-sans-flex",
   display: "swap",
 });
 
@@ -65,8 +78,13 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
-      <body className={`${inter.variable} flex min-h-svh flex-col`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      data-scroll-behavior="smooth"
+      className={`${inter.variable} ${googleSansFlex.variable}`}
+    >
+      <body className="flex min-h-svh flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AmbientBackground />
           <SiteHeader />
