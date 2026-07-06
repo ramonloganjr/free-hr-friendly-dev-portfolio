@@ -25,7 +25,7 @@ export function Hero() {
       <div className="flex flex-col items-start gap-6 max-w-3xl">
         <Reveal delay={80}>
           <h1 className="text-display text-balance">
-            Free HR Friendly{" "}
+            HR Friendly{" "}
             <span className="text-gradient">Dev Portfolio!</span>
           </h1>
         </Reveal>

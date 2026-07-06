@@ -96,7 +96,7 @@ export function SiteFooter() {
             className="btn btn-glass w-full text-center whitespace-normal sm:w-auto sm:whitespace-nowrap"
           >
             <Icon name="github" size={17} className="shrink-0" />
-            Contribute or Get the Source Code
+            Contribute Code
           </a>
           <a
             href="/downloads/portfolio-static-export.zip"

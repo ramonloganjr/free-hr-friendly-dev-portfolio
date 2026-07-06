@@ -36,6 +36,24 @@ export const education = [
   },
 ];
 
+export const certificates = [
+  {
+    name: "Lorem Certified Cloud Architect",
+    issuer: "Ipsum Web Services",
+    year: "2025",
+  },
+  {
+    name: "Dolor Professional Engineer",
+    issuer: "Amet Institute",
+    year: "2024",
+  },
+  {
+    name: "Sit Certified Security Analyst",
+    issuer: "Consectetur Alliance",
+    year: "2023",
+  },
+];
+
 export interface SkillGroup {
   group: string;
   skills: { name: string; icon: string }[];

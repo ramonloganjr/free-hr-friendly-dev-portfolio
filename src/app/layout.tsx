@@ -28,31 +28,31 @@ const googleSansFlex = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://free-hr-friendly-dev-portfolio.vercel.app"),
   title: {
-    default: "Lorem Ipsum — Full-Stack Engineer & Product Designer",
-    template: "%s — Lorem Ipsum",
+    default: "HR Friendly Dev Portfolio — Full-Stack Engineer & Product Designer",
+    template: "%s — HR Friendly Dev Portfolio",
   },
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   keywords: [
-    "Lorem Ipsum",
+    "HR Friendly Dev Portfolio",
     "full-stack engineer",
     "product designer",
     "Next.js",
     "React",
     "TypeScript",
   ],
-  authors: [{ name: "Lorem Ipsum", url: "https://example.com" }],
+  authors: [{ name: "Ramon Logan Jr.", url: "https://example.com" }],
   openGraph: {
     type: "website",
-    siteName: "Lorem Ipsum",
-    title: "Lorem Ipsum — Full-Stack Engineer & Product Designer",
+    siteName: "HR Friendly Dev Portfolio",
+    title: "HR Friendly Dev Portfolio — Full-Stack Engineer & Product Designer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
     images: [{ url: "/open-graph.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lorem Ipsum — Full-Stack Engineer & Product Designer",
+    title: "HR Friendly Dev Portfolio — Full-Stack Engineer & Product Designer",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
     images: ["/open-graph.png"],

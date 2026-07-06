@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   careerTimeline,
+  certificates,
   education,
   skillGroups,
-  ventures,
 } from "@/lib/data/about";
 import { profile } from "@/lib/data/profile";
 import { Icon } from "@/components/ui/Icon";
@@ -188,30 +188,22 @@ export default function AboutPage() {
 
           <Reveal delay={100}>
             <div className="glass h-full rounded-[1.75rem] p-7">
-              <h2 className="text-title-sm">Venture founder</h2>
-              <ul className="mt-6 flex flex-col gap-4">
-                {ventures.map((venture) => (
-                  <li key={venture.name}>
-                    <a
-                      href={venture.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex items-center justify-between gap-3 rounded-2xl px-3 py-2 transition-colors hover:bg-[var(--fill-quaternary)]"
-                    >
-                      <span>
-                        <span className="block font-semibold tracking-[-0.01em]">
-                          {venture.name}
-                        </span>
-                        <span className="text-sm text-tertiary">
-                          {venture.role}
-                        </span>
-                      </span>
-                      <Icon
-                        name="arrowUpRight"
-                        size={16}
-                        className="shrink-0 text-tertiary transition-colors group-hover:text-accent-elevated"
-                      />
-                    </a>
+              <h2 className="text-title-sm">Certificates</h2>
+              <ul className="mt-6 flex flex-col gap-5">
+                {certificates.map((certificate) => (
+                  <li key={certificate.name} className="flex items-start gap-4">
+                    <span className="mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[var(--accent-tint)] text-accent-elevated">
+                      <Icon name="award" size={16} />
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold tracking-[-0.01em]">
+                        {certificate.name}
+                      </p>
+                      <p className="mt-0.5 text-sm text-secondary">
+                        {certificate.issuer}
+                        <span className="text-tertiary"> · {certificate.year}</span>
+                      </p>
+                    </div>
                   </li>
                 ))}
               </ul>

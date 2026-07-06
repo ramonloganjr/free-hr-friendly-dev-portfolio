@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Free HR Friendly Dev Portfolio",
+  name: "HR Friendly Dev Portfolio",
   practice: "Ipsum Studio",
   title: "Full-Stack Engineer & Product Designer",
   location: "Lorem City",
