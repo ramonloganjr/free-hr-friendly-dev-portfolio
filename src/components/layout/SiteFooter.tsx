@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { civicLinks, navLinks, profile } from "@/lib/data/profile";
 import { Icon } from "@/components/ui/Icon";
-import packageJson from "../../../package.json";
 
 const elsewhere = [
   { label: "LinkedIn", href: profile.social.linkedin },
@@ -89,26 +88,24 @@ export function SiteFooter() {
           </nav>
         </div>
 
-        <div className="hairline-t mt-8 flex flex-wrap items-center gap-3 pt-5">
+        <div className="hairline-t mt-8 flex flex-col gap-3 pt-5 sm:flex-row sm:items-center sm:justify-between">
           <a
             href="https://github.com/ramonloganjr/free-hr-friendly-dev-portfolio"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-glass"
+            className="btn btn-glass w-full text-center whitespace-normal sm:w-auto sm:whitespace-nowrap"
           >
-            <Icon name="github" size={17} />
+            <Icon name="github" size={17} className="shrink-0" />
             Contribute or Get the Source Code
           </a>
-          <a href="/downloads/portfolio-static-export.zip" download className="btn btn-glass">
-            <Icon name="download" size={17} />
+          <a
+            href="/downloads/portfolio-static-export.zip"
+            download
+            className="btn btn-glass w-full text-center whitespace-normal sm:w-auto sm:whitespace-nowrap"
+          >
+            <Icon name="download" size={17} className="shrink-0" />
             Download Static Files
           </a>
-          <span
-            className="rounded-full bg-[var(--fill-quaternary)] px-2.5 py-1 font-mono text-xs text-tertiary"
-            title="Current build version"
-          >
-            v{packageJson.version}
-          </span>
         </div>
 
         <div className="mt-5 flex flex-col gap-2 pt-2 text-sm text-tertiary sm:flex-row sm:items-center sm:justify-between">
